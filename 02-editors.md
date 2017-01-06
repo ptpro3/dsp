@@ -71,6 +71,7 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> Sublime.
 I'm already familiar with it. Within the editor, it's easy to switch the file format between Python, Markdown, R, SQL, JSON, etc., and the editor will provide valuable coloring and spacing queues particular to the file type.  
-CMD-S: Save file. 
-CMD-N: New file (opens in another tab). 
-Customizations can be saved in a sublime settings file.
+CMD-S: Save file.  
+CMD-N: New file (opens in another tab).  
+Customizations can be saved in a sublime settings file.  
+
