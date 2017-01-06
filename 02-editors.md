@@ -60,7 +60,8 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I plan to use vim since it's the default on many systems.
+"I've been using vim exclusively for the last 5 years - mostly because I can't figure out how to exit :smiley: "
 
 --
 
@@ -68,6 +69,9 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> Sublime.
+I'm already familiar with it. Within the editor, it's easy to switch the file format between Python, Markdown, R, SQL, JSON, etc., and the editor will provide valuable coloring and spacing queues particular to the file type.
+CMD-S: Save file
+CMD-N: New file (opens in another tab)
+Customizations can be saved in a sublime settings file.
  
