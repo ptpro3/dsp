@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and tuples are sequences of values, but tuples are immutable. This allows tuples to be used as keys in dictionaries.
 
 ---
 
@@ -20,7 +20,12 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets both contain values, but sets are unordered and don't support indexing.  
+```
+myList = [1,2,3]	# indexed list
+mySet = {1,2,3}		# unordered set
+```
+Sets are faster for element search: O(1) for sets vs. O(n) for lists because sets are implemented using hash tables.
 
 ---
 
@@ -28,7 +33,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` allows creation of anonymous functions at runtime. They can be used to return expressions or function results anywhere in the code.
+```
+>>> t
+[('a', 2), ('b', 1), ('c', 0)]
+>>> sorted(t, key = lambda x: x[1])
+[('c', 0), ('b', 1), ('a', 2)]
+```
 
 ---
 
@@ -36,7 +47,19 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions allow convenient construction of lists.
+```
+>>> [x**2 for x in range(4)]
+[0, 1, 4, 9]
+>>> map(lambda x: x**2, [0,1,2,3])
+[0, 1, 4, 9]
+>>> filter(lambda x: x==2, [0,1,2,3])
+[2]
+>>> {x**2 for x in range(4)}
+set([0, 1, 4, 9])
+>>> {key:value**2 for (key,value) in [(0,0),(1,1),(2,2),(3,3)]}
+{0: 0, 1: 1, 2: 4, 3: 9}
+```
 
 ---
 
@@ -51,7 +74,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937
 
 b.  
 ```
@@ -59,7 +82,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -67,7 +90,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
