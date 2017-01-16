@@ -1,6 +1,6 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
->> 5'10" = 177.80 cm  
+5'10" = 177.80 cm  
 6'1" = 185.42 cm  
 ```
 >>> import scipy.stats
